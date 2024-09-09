@@ -187,3 +187,94 @@ html {
     border: none;
     height:2rem;
   }
+  
+  #content {
+    display: grid;
+    background-color: gray;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+  }
+
+  .project-section {
+
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    column-gap: 10px;
+    row-gap: 10px;
+
+    border: 1px solid black;
+
+
+  }
+
+  .project-grid-item {
+    
+   
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    
+  }
+
+
+  .announcement-section {
+
+
+
+    grid-column-start: 9;
+    grid-column-end: auto;
+    grid-row-start: 1;
+    grid-row-end: 6;
+
+
+
+
+  }
+
+  .trending-section {
+
+
+
+    grid-column-start: 9;
+    grid-column-end: auto;
+    grid-row-start: 6;
+    grid-row-end: 10;
+
+
+
+
+  }
+
+  .project-grid-item {
+   
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border-left: 5px solid rgb(218, 200, 42);
+  }
+
+  ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-left: auto;
+    gap:40px;
+    margin-right: 40px;
+    
+  }
+
+  .announcement-section , .trending-section{
+    
+   
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 15px;
+  }
