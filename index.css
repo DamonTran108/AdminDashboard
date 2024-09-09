@@ -1,7 +1,16 @@
+
+html {
+  display: grid;
+  min-height: 100%;
+  margin: 0;
+  padding: 0; 
+}
+
+
+
 .container {
     height: 100%;
     display: grid;
-
 
    grid-template-columns: 5, 100px;
    grid-template-rows: 10, 100px;
@@ -16,36 +25,80 @@
 }
 
 #sidebar {
+    font-size: 2em;
+    padding: 20px;
+    color: white;
     display: flex;
     flex-direction: column;
     gap:20px;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 10;
+    background-color: #15a6e9;
   }
+
+
 
 
   .top-section-sidebar{
+    font-size: 1.5rem;
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(120px, 15%));
+    row-gap: 10px;
 
-    display: flex;
-    flex-direction: column;
-    gap:10px;
   }
   
+  
+  .top-section-sidebar > img {
+
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+  }
+
+  .top-section-sidebar > a {
+    
+    padding-top: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+  }
 
   .bottom-section-sidebar{
+    font-size: 1.5rem;
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(120px, 15%));
+    row-gap: 10px;
 
-    display: flex;
-    flex-direction: column;
-    gap:10px;
+  }
+
+  .bottom-section-sidebar > img {
+
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+  }
+
+  .bottom-section-sidebar > a {
+    
+    padding-top: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
   }
 
   #content {
 
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 10;
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-row-end: 10;
 
   }
@@ -55,16 +108,17 @@
 
     display: flex;
    flex-direction: column;
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 10;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 2;
   }
 
    .search-container {
+    flex:1;
     gap:10px;
     display: flex;
-
+    flex-wrap: wrap;
     border: 1px solid green;
   
     margin-right: auto;
@@ -81,10 +135,13 @@
   }
   
 
-  .header-container-bottom {
+ .header-container-bottom {
     gap:10px;
     display: flex;
     flex-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    
   }
 
   .header-container-bottom-first-section {
@@ -110,7 +167,23 @@
     justify-content: center;
     align-items: center;
     margin-right:20px;
+    margin-right: 10em;
+   
+  }
+
+  .button-container {
+    display: flex;
+    gap:20px;
+ 
   }
 
 
-  
+ 
+  button {
+    color: white;
+    background-color:#15a6e9;
+    border-radius: 15px;
+    width:5rem;
+    border: none;
+    height:2rem;
+  }
